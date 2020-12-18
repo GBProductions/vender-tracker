@@ -11,7 +11,7 @@ namespace VendorTracker.Tests
         [TestMethod]
         public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
         {
-            Vendor newVendor = new Vendor("Test");
+            Vendor newVendor = new Vendor("Test", "test1");
             Assert.AreEqual(typeof(Vendor), newVendor.GetType());
         }
 
@@ -22,7 +22,7 @@ namespace VendorTracker.Tests
             string business = "The Cake House.";
 
             //Act
-            Vendor newVendor = new Vendor(business);
+            Vendor newVendor = new Vendor(business, "test");
             string result = newVendor.Business;
 
             //Assert
